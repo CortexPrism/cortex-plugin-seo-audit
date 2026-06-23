@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-seo-audit",
-  "version": "1.0.0",
-  "description": "SEO Audit & Content Strategy Agent — Ahrefs/DataForSEO/GSC/Semrush for technical SEO, keyword gaps, content optimization",
+  "version": "1.0.1",
+  "description": "SEO Audit & Content Strategy Agent \u2014 Ahrefs/DataForSEO/GSC/Semrush for technical SEO, keyword gaps, content optimization",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,18 +9,40 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-seo-audit",
   "homepage": "https://cortexprism.io/marketplace/plugins/seo-audit",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "seo_technical_audit", "description": "Run technical SEO audit", "params": [] },
-    { "name": "seo_keyword_gap", "description": "Find keyword gaps vs competitors", "params": [] },
+    {
+      "name": "seo_technical_audit",
+      "description": "Run technical SEO audit",
+      "params": []
+    },
+    {
+      "name": "seo_keyword_gap",
+      "description": "Find keyword gaps vs competitors",
+      "params": []
+    },
     {
       "name": "seo_content_optimize",
       "description": "Get content optimization recommendations",
       "params": []
     },
-    { "name": "seo_backlink_analysis", "description": "Analyze competitor backlinks", "params": [] }
+    {
+      "name": "seo_backlink_analysis",
+      "description": "Analyze competitor backlinks",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
